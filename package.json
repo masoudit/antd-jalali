@@ -14,7 +14,13 @@
     "ant5"
   ],
   "author": "MasoudIT",
-  "contributors": [{"name": "Hamidreza Ghanbari", "email": "hamidrezaghanbari13@gmail.com", "url": "https://hamidreza-ghanbari.vercel.app"}],
+  "contributors": [
+    {
+      "name": "Hamidreza Ghanbari",
+      "email": "hamidrezaghanbari13@gmail.com",
+      "url": "https://hamidreza-ghanbari.vercel.app"
+    }
+  ],
   "homepage": "https://github.com/masoudit/antd-jalali",
   "license": "MIT",
   "repository": {
@@ -41,16 +47,16 @@
   },
   "peerDependencies": {
     "antd": "^5.16.1",
-    "react": "^17.0.2",
-    "react-dom": "^17.0.2"
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
   },
   "devDependencies": {
-    "@types/react": "^17.0.39",
-    "@types/react-dom": "^17.0.13",
+    "@types/react": "^18.2.0",
+    "@types/react-dom": "^18.2.0",
     "antd": "^5.16.1",
     "esbuild": "^0.14.24",
-    "react": "^17.0.1",
-    "react-dom": "^17.0.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
     "react-scripts": "5.0.0",
     "typescript": "^5.4.5"
   },
