@@ -99,11 +99,14 @@ const generateJalaliConfig = {
       dayjs().locale(parseLocale(locale)).localeData().weekdaysMin(),
     getShortMonths: (locale) =>
       dayjs().locale(parseLocale(locale)).localeData().monthsShort(),
-    format: (locale, date, format) =>
-      date.locale(parseLocale(locale)).format(format),
+    format: (locale, date, format) => {
+      return date.locale(parseLocale(locale)).format(format);
+    },
     parse: (locale, text, formats) => {
-      console.log(locale, text);
+      if (text.length !== 10) return null;
+
       const localeStr = parseLocale(locale);
+
       for (let i = 0; i < formats.length; i += 1) {
         const format = formats[i];
         const formatText = text;
@@ -123,7 +126,14 @@ const generateJalaliConfig = {
           parseNoMatchNotice();
           return null;
         }
-        const date = dayjs(formatText, format).locale(localeStr);
+
+        const date = dayjs(formatText, {
+          format,
+          locale: "fa_IR",
+          //  @ts-ignore
+          jalali: true,
+        }).locale(localeStr);
+
         if (date.isValid()) {
           return date;
         }

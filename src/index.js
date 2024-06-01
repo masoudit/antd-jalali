@@ -9,7 +9,11 @@ import dayjs from "dayjs";
 const date = dayjs().calendar('jalali').locale('en').format('DD MMMM YYYY dddd');
 
 // If you want to all new instanses of dayjs use jalali calendar, you can set default calendar
-// dayjs.calendar("jalali");
+dayjs.extend(jalaliday)
+
+import jalaliday from "jalaliday";
+
+dayjs.calendar("jalali");
 
 import './index.css'
 
