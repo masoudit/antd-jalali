@@ -131,7 +131,7 @@ const generateJalaliConfig = {
           format,
           locale: "fa_IR",
           //  @ts-ignore
-          jalali: true,
+          jalali: dayjs(formatText).isJalali(),
         }).locale(localeStr);
 
         if (date.isValid()) {
