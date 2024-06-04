@@ -14,13 +14,6 @@
     "ant5"
   ],
   "author": "MasoudIT",
-  "contributors": [
-    {
-      "name": "Hamidreza Ghanbari",
-      "email": "hamidrezaghanbari13@gmail.com",
-      "url": "https://hamidreza-ghanbari.vercel.app"
-    }
-  ],
   "homepage": "https://github.com/masoudit/antd-jalali",
   "license": "MIT",
   "repository": {
